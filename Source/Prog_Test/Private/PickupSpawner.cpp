@@ -96,6 +96,7 @@ void APickupSpawner::CheckPickups()
 			PlaySoundAtActor(pickup->sndCollect, pickup);
 			listPickups.remove(pickup);
 			pickup->Destroy();
+			nCollectedPickups++;
 			it--;
 		}
 	}

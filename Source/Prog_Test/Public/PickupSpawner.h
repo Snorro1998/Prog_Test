@@ -78,6 +78,9 @@ public:
 	UPROPERTY(EditAnywhere)
 		int maxPickups;
 
+	UPROPERTY(BlueprintReadWrite)
+		int nCollectedPickups;
+
 	std::list<APickup*> listPickups;
 	FTimerHandle MyTimerHandle;
 
